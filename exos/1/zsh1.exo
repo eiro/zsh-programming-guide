@@ -39,7 +39,7 @@ soit un script smart-columns.hs dont je sais
   je veux me rendre
 
     Solution1: cd $( dirname $( locate smart-columns.hs ) )
-    Solution2: cd $( locate smart-columns.hs )(:h)
+    Solution2: cd $( locate smart-columns.hs )(:h:h)
 
 }}}
 
