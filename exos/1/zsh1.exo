@@ -1,0 +1,45 @@
+vim: fdm=marker
+
+Soit une commande qui produit le chemin complet d'un fichier sur une ligne
+écrivez une ligne de shell permettant de se rendre dans le grand-parent
+de ce fichier (le répertoire qui contient le répertoire qui contient le
+fichier
+
+Example {{{
+
+    $ which yes
+    /usr/bin/yes
+    $ # ici votre solution
+    $ pwd
+    /usr
+
+}}}
+
+Concepts {{{
+
+Solution1 
+    compat=POSIX
+    doc=man:dash:Command Substitution
+    doc=man:dirname
+
+Solution2
+    compat=zsh+setopt:extendeglob
+    doc=man:zshexpn:COMMAND SUBSTITUTION
+    doc=man:zshexpn:FILENAME GENERATION:Glob Qualifiers
+
+}}}
+
+IRL {{{
+
+soit un script smart-columns.hs dont je sais
+
+* qu'il n'est présent qu'une seule fois sur le systeme
+* que la commande locate le trouvera
+* qu'il est dans le sous-répertoire scripts du projet dans lequel
+  je veux me rendre
+
+    Solution1: cd $( dirname $( locate smart-columns.hs ) )
+    Solution2: cd $( locate smart-columns.hs )(:h)
+
+}}}
+
