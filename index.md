@@ -5,7 +5,7 @@ traités
 * [ksh](https://en.wikipedia.org/wiki/Korn_shell) et l'implémentation qui fait
   référence à mes yeux ([mksh](https://www.mirbsd.org/mksh.htm)).
   ksh est présent sur de nombreux unices et est un tres bon choix quand chaque 
-  Kbyte compte. 
+  Kbyte compte.
 
 * [standard POSIX actuel](http://pubs.opengroup.org/onlinepubs/9699919799/idx/shell.html)
 
@@ -16,13 +16,20 @@ Un mot sur bash: son avantage est d'être le shell standard du GNU. Il est fourn
 par défaut dans la plupart des distributions linux et je ne peux donc l'ignorer.
 Il y est considéré dans le présent document comme une implementation bloated de ksh.
 
-# hello world
+# Round one: know the basics
 
 * cycle de vie de la commande
     * REPL
     * eval = expansion + execution
     * expansion = variable, command, filename (globing)
 * l'escaping et le quoting
+* basics of affectation and interpolation
+  (posix interpolation)
+
+
+
+
+# hello world
 
 # REPL and redirections
 
@@ -30,8 +37,14 @@ Il y est considéré dans le présent document comme une implementation bloated 
 * line oriented tools (mostly)
 * read/write are blocking (-> meeting points, -> on demand)
 * redirections
+    * redirection operators ( & > < | |& ...)
+    * multios
+    * redirection tools (tee, mkfifo)
+    * tty, /dev/ptmx
 * how/why(not?) xml/json/... streaming data
   (functionnal programming langages, perl, powershell ... )
+
+
 
 # variables
 
