@@ -1,3 +1,4 @@
+
 * [principles](c/principles.md)
 * scope et variables locales
 * données structurées: fichiers
@@ -10,5 +11,9 @@
 
 # todo
 
-*PUOC dans filter techniques
+* PUOC dans filter techniques
+* add links to other coding styles
+    * [ssgp](http://eiro.github.io/unix/ssgp.html)
+    * [google bash coding style](?)
+    * [omz coding style](?)
 

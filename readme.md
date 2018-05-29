@@ -1,14 +1,18 @@
 this repo is a collection of notes, fragments and materials to a
-possible "uze / zsh (and a bit of ksh)" programming guide.
+possible zsh programming guide.
 
-this is not a programming tutorial: you should be confortable with
-those concepts
+the default coding style will be the one of the uze project
+(so the use of the `@` helpers are recommended) however
+the standard zsh syntax should be explained and ksh/POSIX
+limitations should be explained when relevant.
 
-* variable and interpolation
+this is not a programming tutorial: some programming concepts
+and their helpfulness should be already known
+
+* variable interpolation (expansions in zsh)
 * lists and dictionnaries (or hash or map)
-* streams (generators in python), scoping
+* generator, on demand
+* variable scope, namespace
 
-also: there would be no tips about pimping your term, you don't even
-need a terminal. However, the langage used is the one you can use
-interactively from your terminal. you can improve your productivity
-by reading those notes.
+also: don't expect this tutorial to explain how to pimp
+your term.
