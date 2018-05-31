@@ -1,6 +1,16 @@
-Le guide s'adresse à des programmeurs (même occasionels) qui sont
-déjà à l'aise avec un langages interprété. nous utiliserons librement
-des exemples et des concepts de ces langages pour faciliter l'apprentissage.
+Le présent guide s'adresse à plusieur populations:
+
+* des programmeurs (même occasionels) qui sont déjà à l'aise avec un
+  langage interprété et souhaitent apprendre ou découvrir zsh.
+  nous utiliserons régulièrement des parallèles avec les concepts
+  présents dans ces langages.
+* les utilisateurs de shells autres que zsh fatigués par les bricolages
+  qu'imposent le manque de richesse dans les possibilités d'interpolation
+  des variables, de création ou de parcours de structures de données.
+* toute personne désireuse d'enrichir sa réflexion sur les bonnes pratiques
+  et les stratégies à mettre en place pour écrire des scripts shell
+  puissants, lisibles, maintenables. Je livre ici l'état de la mienne
+  après 20 ans de pratique quasi-quotidienne du sujet.
 
 Malgré des décenies de critiques incessantes à propos du shell scripting,
 force est d'avouer que la succession peine à venir et que nombre de
